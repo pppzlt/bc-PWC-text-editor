@@ -3,6 +3,7 @@ import Editor from './editor';
 import './database';
 import '../css/style.css';
 
+console.log('abc')
 const main = document.querySelector('#main');
 main.innerHTML = '';
 
@@ -18,6 +19,7 @@ const loadSpinner = () => {
 };
 
 const editor = new Editor();
+console.log(editor)
 
 if (typeof editor === 'undefined') {
   loadSpinner();
